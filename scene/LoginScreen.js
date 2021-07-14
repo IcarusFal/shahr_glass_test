@@ -19,18 +19,16 @@ const LoginScreen = ({ navigation }) => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          // your expected POST request payload goes here
           phone:number
         })
       });
       const data = await response.json();
+      //if get success code
       if(data){
-        // enter your logic when the fetch is successful
         navigation.navigate("AuthScreen",{number:number})
         }
       //console.log(data);
     } catch (error) {
-      // enter your logic for when there is an error (ex. error toast)
       console.log(error)
     }
 
