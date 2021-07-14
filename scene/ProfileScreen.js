@@ -36,13 +36,13 @@ const ProfileScreen = ({navigation}) => {
           <Text style={{ fontSize: 20, color: "#b0b8b2" }}>نام</Text>
         </Item>
         <Item style={styles.InputContainer} >
-          <Input style={{ fontSize: 20, color: "#3c423d" }}>{userInfo.first_name}</Input>
+          <Text style={{ fontSize: 20, color: "#3c423d" }}>{userInfo.first_name}</Text>
         </Item>
         <Item style={styles.textInputContainer} >
           <Text style={{ fontSize: 20, color: "#b0b8b2" }}>نام خانوادگی</Text>
         </Item>
         <Item  style={styles.InputContainer} >
-          <Input style={{ fontSize: 20, color: "#3c423d" }}>{userInfo.last_name}</Input>
+          <Text style={{ fontSize: 20, color: "#3c423d" }}>{userInfo.last_name}</Text>
         </Item>
         <Item style={styles.textInputContainer} >
           <Text style={{ fontSize: 20, color: "#b0b8b2" }}>شماره تلفن</Text>
