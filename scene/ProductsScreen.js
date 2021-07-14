@@ -41,7 +41,7 @@ const product = async () => {
           onPress={() => navigation.navigate("ProfileScreen")}>
           <Text>پروفایل</Text></Button>
       </View>
-      <View style={{ flex: 0.75 }}>
+      <View style={{ flex: 0.7 }}>
         <FlatList
           data={productdata}
           renderItem={({ item, index }) => {
@@ -99,7 +99,7 @@ const styles = StyleSheet.create({
 
   },
   topView: {
-    flex: 0.25,
+    flex: 0.3,
     alignItems: 'center',
     padding: 15
   },
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 10,
     width: 70,
-    height: 35,
+    height: 40,
     marginTop: 7,
     backgroundColor: '#ffffff',
     justifyContent: 'center'
