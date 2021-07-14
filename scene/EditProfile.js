@@ -25,6 +25,7 @@ const EditProfile = () => {
       });
       const data = await response.json();
      // console.log(data)
+      //if get success code
       if (data) {
         navigation.navigate("ProfileScreen")
       }
