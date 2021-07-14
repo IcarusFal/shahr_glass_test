@@ -6,11 +6,11 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import { I18nManager } from 'react-native';
 I18nManager.forceRTL(true);
 
-const EditProfile = () => {
+const EditProfile = ({navigation}) => {
   const [fName, setFName] = useState(null);
   const [lName, setLName] = useState(null);
   const [userInfo,setUserInfo] = useState([])
-  const editProf = async ({navigation}) => {
+  const editProf = async () => {
     let token = await AsyncStorage.getItem("access_token");
     try {
       const response = await fetch(`${MAIN_URL}/users/self`, {
