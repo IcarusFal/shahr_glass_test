@@ -65,6 +65,12 @@ const EditProfile = ({navigation}) => {
           onPress={editProf}>
           <Text >ذخیره تغییرات</Text>
         </Button>
+        <Item style={styles.textInputContainer} >
+          <Text style={{ fontSize: 10, color: "#b0b8b2" }}>
+            نکته : تغییرات ذخیره نمیشود چون در
+          api - last_name , first_name نداریم
+         . در نتیجه به صفحه پروفایل نمیرود</Text>
+        </Item>
       </Content>
 
     </Container>
@@ -94,6 +100,7 @@ const styles = StyleSheet.create({
   ButtonContainer: {
     justifyContent: 'center',
     marginTop: 25,
+    marginBottom:15,
     width: 200,
     borderRadius: 10,
     textAlign: 'center',
